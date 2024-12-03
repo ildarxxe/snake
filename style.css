@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(43, 43, 43);
+    color: white!important;
+}
+
+.area {
+    display: grid;
+    width: 625px;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(25, 1fr);
+    margin: 0 auto;
+}
+
+.cell {
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.547);
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.snake {
+    background-color: #ffbf00;
+}
+
+.apple {
+    color: white;
+    background: red;
+    line-height: 25px;
+    text-align: center;
+}
+
+.apple::before {
+    content: 'A';
+}
